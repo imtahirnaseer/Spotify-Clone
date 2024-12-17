@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Spotify Clone made by Tahir</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img
+          alt="Spotify logo, a green circle with three curved lines inside"
+          class="h-10 w-10"
+          height="50"
+          src="https://storage.googleapis.com/a1aa/image/pPOlgspExex2SyOW4e3beRtAxzTGS2pcTcZolrrdNeTuaKvPB.jpg"
+          width="50"
+        />
+        <span class="ml-3 text-2xl font-bold">Spotify</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a class="hover:text-green-500" href="#">Premium</a>
+        <a class="hover:text-green-500" href="#">Support</a>
+        <a class="hover:text-green-500" href="#">Download</a>
+        <a class="hover:text-green-500" href="#">Sign Up</a>
+        <a class="hover:text-green-500" href="#">Log In</a>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="bg-gray-800 w-64 p-4 space-y-6">
+        <div>
+          <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </div>
+        <div>
+          <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </a>
+        </div>
+        <div>
+          <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+            <i class="fas fa-book"></i>
+            <span>Your Library</span>
+          </a>
+        </div>
+        <div>
+          <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+            <i class="fas fa-plus-square"></i>
+            <span>Create Playlist</span>
+          </a>
+        </div>
+        <div>
+          <a class="flex items-center space-x-2 hover:text-green-500" href="#">
+            <i class="fas fa-heart"></i>
+            <span>Liked Songs</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-6" id="greeting-message">Good Evening</h1>
+
+        <!-- Product Listing -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="product-list">
+          <!-- Product Cards (will be dynamically inserted by JavaScript) -->
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-center">
+      <p>© 2023 Spotify Clone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
